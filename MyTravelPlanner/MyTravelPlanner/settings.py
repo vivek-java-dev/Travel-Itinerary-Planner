@@ -23,6 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-2#j&gk5c1b#6ueomke)g5*&^_uh=d-@6w&q%-rcyu!fmu418=)'
 
+GOMAPS_API_KEY = 'AlzaSyWyGLFf3Q4YXGoAdkb9DkCsIgPIQ3tA1Yx'
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -43,16 +46,16 @@ INSTALLED_APPS = [
     'django_browser_reload',
     "crispy_forms",
     "crispy_tailwind",
-    'itinerary'
+    'itinerary',
 
 ]
 
-TAILWIND_APP_NAME = 'theme' # This is the name of the app that will be used to generate the tailwind files
+TAILWIND_APP_NAME = 'theme' 
 INTERNAL_IPS = ['127.0.0.1']
 
-# CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_TEMPLATE_PACK = "tailwind"
 
-# CRISPY_TEMPLATE_PACK = "tailwind"
 
 
 MIDDLEWARE = [
