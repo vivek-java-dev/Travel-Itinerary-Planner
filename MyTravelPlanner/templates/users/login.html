@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% load static tailwind_tags %}
+{% load crispy_forms_tags %}
+
+
+{% block title %}Let's Go - Login: {{ destination }} {% endblock %}
+
+{% block content %}
+
+
+
+<div class="px-40 flex flex-1 justify-center py-5">
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+      <div class="flex flex-wrap justify-between gap-3 p-4">
+        <div class="flex min-w-72 flex-col gap-3">
+          <p class="text-[#141C24] text-4xl font-black leading-tight tracking-[-0.033em]">Sign UP </p>
+          <p class="text-[#34455f] text-lg font-normal leading-normal">-> Get started with us and explore the world</p>
+        </div>
+      </div>
+
+      <form onsubmit="hidePostForm()" class = "mt-4 px-32" method='POST' >
+          {% csrf_token %}
+        {{form|crispy}}
+        <div class="flex gap-2">
+            <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#F4C753] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]"
+            type="submit" value ="Sign Up">
+                <span class="truncate">Login</span>
+            </button>
+
+            <a href="/">
+            <button
+            type="button"
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#E4E9F1] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">Cancel</span>
+            </button></a>
+        </div>
+     </form>
+    
+     <h1 class='mx-32'>Don't have an account! <br> <a href="{% url 'users-sign-up' %}" class="text-blue-500 mt-4">- Create an Account</a></h1>
+
+
+
+    </div>
+  </div>
+{% endblock %}

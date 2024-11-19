@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     "crispy_tailwind",
     'itinerary',
+    'users'
 
 ]
 
@@ -150,8 +151,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
-# LOGIN_REDIRECT_URL = 'blog-index'
-# LOGIN_URL = 'users-login'
+LOGIN_REDIRECT_URL = 'home-page'
+LOGIN_URL = 'users-login'
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 

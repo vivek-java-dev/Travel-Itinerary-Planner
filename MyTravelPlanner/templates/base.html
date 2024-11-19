@@ -36,39 +36,80 @@
 
 
         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#E4E9F1] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#141C24]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+          <a href="{% url 'home-page' %}">
+            <div class="flex items-center gap-4 text-[#141C24]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-[#141C24] text-lg font-bold leading-tight tracking-[-0.015em]">Let's Go</h2>
             </div>
-            <h2 class="text-[#141C24] text-lg font-bold leading-tight tracking-[-0.015em]">Let's Go</h2>
-          </div>
+          </a>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-[#141C24] text-sm font-medium leading-normal" href="#">Go Together</a>
-              <a class="text-[#141C24] text-sm font-medium leading-normal" href="#">Pricing</a>
-              <a class="text-[#141C24] text-sm font-medium leading-normal" href="#">Profile</a>
+              <a class="text-[#141C24] text-sm font-medium leading-normal" href="{% url 'gotogether' %}">Go Together</a>
+              {% comment %} <a class="text-[#141C24] text-sm font-medium leading-normal" href="{% url '#' %}">Profile</a>  {% endcomment %}
             </div>
             <div class="flex gap-2">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#F4C753] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
+              {% if request.user.is_authenticated %}
+              <a onclick="showLogoutForm()">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#E4E9F1] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]">
+                  <span class="truncate">Log out</span>
+                </button>
+              </a>
+              {% else %}
+              <a href="{% url 'users-sign-up' %}">
+                <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#F4C753] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]">
                 <span class="truncate">Sign up</span>
-              </button>
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#E4E9F1] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
+                </button>
+              </a>
+              <a href="{% url 'users-login' %}">
+                <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#E4E9F1] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]">
                 <span class="truncate">Log in</span>
-              </button>
+                </button>
+              </a>
+             {% endif %}
             </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://cdn.usegalileo.ai/stability/507ec44f-496c-433d-b653-f60f25c69bfd.png");'
+            ></div>
           </div>
         </header>
+
+        <div id="logout-form" class="absolute hidden inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center ">
+          <div  class=" absolute bg-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-6 py-10 max-w-2xl sm:px-6 lg:px-20 rounded-xl ">
+  
+              <h1 class=" text-2xl">Are you sure you want to LogOut</h1>
+              <form  action="{% url 'users-logout' %}" method='POST' >
+                  {% csrf_token %}
+                  <div class="flex gap-2 mt-3 ">
+                    <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#F4C753] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]"
+                    type="submit" value ="Sign Up">
+                        <span class="truncate">Log out</span>
+                    </button>
+        
+                    <button
+                    type="button"
+                    onclick="hideLogoutForm()"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#E4E9F1] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]">
+                        <span class="truncate">Cancel</span>
+                    </button>
+                </div>
+              </form>
+              
+          </div>
+      </div>
 
         {% block content %}
 
@@ -96,6 +137,49 @@
                     <span class="truncate">Create Itinerary</span>
                   </button>
                 </a>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(228px,1fr))] gap-2.5 px-4 py-3 @3xl:grid-cols-4">
+              <div class="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#D4DBE8] bg-[#F8F9FB] p-6 max-w-[480px]">
+                <div class="flex flex-col gap-1">
+                  <h1 class="text-[#141C24] text-base font-bold leading-tight">Free Plan</h1>
+                  <p class="flex items-baseline gap-1 text-[#141C24]">
+                    <span class="text-[#141C24] text-4xl font-black leading-tight tracking-[-0.033em]">$0</span>
+                    <span class="text-[#141C24] text-base font-bold leading-tight">forever</span>
+                  </p>
+                </div>
+                <a
+                  href="{% url 'users-sign-up' %}"
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#E4E9F1] text-[#141C24] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Get Started</span>
+                </a>
+                <div class="flex flex-col gap-2">
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#141C24]">
+                    <div class="text-[#141C24]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Unlimited access to all features
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#141C24]">
+                    <div class="text-[#141C24]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    No hidden fees
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#141C24]">
+                    <div class="text-[#141C24]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    No credit card required
+                  </div>
                 </div>
               </div>
             </div>
@@ -165,32 +249,36 @@
                 </div>
               </div>
             </div>
+
+
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <div class="flex flex-col gap-3 pb-3">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                   style='background-image: url("https://cdn.usegalileo.ai/stability/8051efb9-2af5-47df-acc9-04443714da23.png");'
                 ></div>
-                <p class="text-[#141C24] text-base font-medium leading-normal">Goa</p>
+                <p class="text-[#141C24] ml-2 text-base font-medium leading-normal">Goa</p>
               </div>
               <div class="flex flex-col gap-3 pb-3">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                   style='background-image: url("https://img.freepik.com/free-photo/indian-city-buildings-scene_23-2151823143.jpg?t=st=1728139852~exp=1728143452~hmac=1632b0ddaa44a4aa7925fef0d6b0cf04d0fe1040b54da6b1cac9727638010735&w=1060");'
                 ></div>
-                <p class="text-[#141C24] text-base font-medium leading-normal">Jaipur</p>
+                <p class="text-[#141C24] ml-2 text-base font-medium leading-normal">Jaipur</p>
               </div>
               <div class="flex flex-col gap-3 pb-3">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a049145f-108d-4c1f-abdb-744f0230ab42.png");'
                 ></div>
-                <p class="text-[#141C24] text-base font-medium leading-normal">Kerala</p>
+                <p class="text-[#141C24] ml-2 text-base font-medium leading-normal">Kerala</p>
               </div>
             </div>
+            
           </div>
         </div>
 
+        
         {% endblock %}
 
         <footer class="flex justify-center border-t border-solid border-t-[#E4E9F1]">
@@ -198,6 +286,7 @@
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
               <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
                 <a class="text-[#3F5374] text-base font-normal leading-normal min-w-40" href="#">Contact us</a>
+                <a class="text-[#3F5374] text-base font-normal leading-normal min-w-40" href="#">About us</a>
                 <a class="text-[#3F5374] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
                 <a class="text-[#3F5374] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
               </div>
@@ -230,7 +319,7 @@
                   </div>
                 </a>
               </div>
-              <p class="text-[#3F5374] text-base font-normal leading-normal">2023 Let'sGo. All rights reserved.</p>
+              <p class="text-[#3F5374] text-base font-normal leading-normal">@2024  Let'sGo. All rights reserved.</p>
             </footer>
           </div>
         </footer>

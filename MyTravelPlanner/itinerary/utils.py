@@ -20,7 +20,10 @@ def get_gomaps_places(destination, preference):
             {
                 'name': place['name'],
                 'address': place.get('formatted_address', 'No address provided'),
-                'rating': place.get('rating', 'No rating available')
+                'rating': place.get('rating', 'No rating available'),
+                "lat": place.get("geometry", {}).get("location", {}).get("lat"),
+                "lng": place.get("geometry", {}).get("location", {}).get("lng")
+                
             }
             for place in results
         ]
@@ -38,15 +41,18 @@ def generate_itinerary(destination, preference, initial_date, final_date):
 
     # Generate the main itinerary
     for day in range(number_of_days):
+
         if day < len(places):
             place = places[day]
+
             main_itinerary.append({
                 'day': f"Day {day + 1}",
                 'name': place['name'],
                 'address': place['address'],
                 'rating': place['rating'],
-                'lat': place['rating'],
-
+                "lat": place["lat"],
+                "lng": place["lng"]
+    
             })
         else:
             # Placeholder if there are fewer places than days
@@ -63,8 +69,12 @@ def generate_itinerary(destination, preference, initial_date, final_date):
             'name': place['name'],
             'address': place['address'],
             'rating': place['rating'],
+            "lat": place["lat"],
+            "lng": place["lng"]
+    
 
         })
+
 
     return main_itinerary, suggestions
 

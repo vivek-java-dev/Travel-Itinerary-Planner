@@ -24,7 +24,9 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='home-page' ),
+    path('gotogether/',views.gotogether,name='gotogether'),
     path('itinerary/',include('itinerary.urls')),
+    path('users/',include('users.urls')),
     path("__reload__/", include("django_browser_reload.urls")),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

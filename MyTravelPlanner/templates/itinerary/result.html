@@ -27,11 +27,19 @@
               <p class="text-[#141C24] text-base font-bold leading-tight">Day {{ forloop.counter }} : {{ place.name }}</p>
               <p class="text-[#3F5374] text-sm font-normal leading-normal">Address: {{place.address}}}}</p>
             </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#E4E9F1] text-[#141C24] text-sm font-medium leading-normal w-fit"
+            <div class="flex gap-3">
+              <button
+              class="inline min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#E4E9F1] text-[#141C24] text-sm font-medium leading-normal w-fit"
             >
               <span class="truncate">Rating: {{place.rating}}</span>
             </button>
+            <button
+              class="inline min-w-[84px] max-w-[480px]  cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#F4C753] text-[#fff] text-sm font-medium leading-normal w-fit"
+              onclick="getDirections({{place.lat|default:'null' }}, {{ place.lng|default:'null'}})"
+            >
+              <span class="truncate">Get Directions</span>
+            </button>
+            </div>
           </div>
         </div>
       </div>
@@ -47,11 +55,19 @@
                 <p class="text-[#141C24] text-base font-bold leading-tight">{{ place.name }}</p>
                 <p class="text-[#3F5374] text-sm font-normal leading-normal">Address: {{place.address}}}}</p>
               </div>
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#E4E9F1] text-[#141C24] text-sm font-medium leading-normal w-fit"
+              <div class="flex gap-3">
+                <button
+                class="inline min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#E4E9F1] text-[#141C24] text-sm font-medium leading-normal w-fit"
               >
                 <span class="truncate">Rating: {{place.rating}}</span>
               </button>
+              <button
+                class="inline min-w-[84px] max-w-[480px]  cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#A0C4FF] text-[#fff] text-sm font-medium leading-normal w-fit"
+                onclick="getDirections({{place.lat|default:'null' }}, {{ place.lng|default:'null'}})"
+              >
+                <span class="truncate">Get Directions</span>
+              </button>
+              </div>
             </div>
           </div>
         </div>
